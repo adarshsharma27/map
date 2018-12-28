@@ -1,0 +1,259 @@
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+input[type=checkbox]{
+
+
+    display:none;
+}
+
+input[type=checkbox]+label:before{
+    content:"\2714";
+    border:2px solid lightblue;
+    width:20px;
+    height:20px;
+    padding:10px;
+    vertical-align: 3px;
+color:transparent;
+}
+
+
+input[type=checkbox]:checked+label:before{
+
+background-color:green;
+color:black;
+border-radius:2px solid yellow;
+}
+h1{
+    border:2px solid lightblue;
+    width:100px;
+    padding:12px;
+    
+}
+/* bordercolor change on hover*/
+h1:hover{
+
+    border-color:red;
+}
+
+
+/*hover on only icon*/
+.icons{
+    text-align:center;
+    background-color:#f8cd53;
+}
+i{
+    padding:20px;
+    border:2px solid blue;
+    
+}
+ .fa-facebook:hover{
+    color:lightblue;
+    background-color:lightpink;
+}
+.fa-facebook{
+    border-radius: 34px;
+    width: 23px;
+    height: 20px;
+}
+
+
+.fa-google:hover{
+    color:red;
+    background-color:lightpink;
+    border-color:red;
+
+}
+.fa-google{
+    border-radius:60px;
+    width:20px;
+    height:20px;
+}
+
+.fa-twitter:hover{
+
+color:blue;
+background-color:lightpink;
+}
+.fa-twitter{
+    border-radius:60px;
+    width:20px;
+    height:20px;
+}/*hover on only icon-end*/
+/*   video background start */
+.video-content
+{
+ 
+background-color: aquamarine;
+}
+/*   video background start */
+embed{
+    opacity: 0.1;
+    box-sizing: border-box;
+    margin :0px;
+    padding: 0px;
+      
+
+}
+button{
+    color:white;
+    background-color:black;
+    border:2px solid black;
+    
+
+}
+.googlemap iframe {
+    width:1333px;
+}
+img{
+    width: 728px;
+    height: 449px;
+}
+
+@media(max-width:450px){
+    .google{
+        display:flex;
+        flex-direction:column;
+    
+    }
+    iframe{
+       width:709px;
+    }
+img{
+    width: 708px;
+    height: 391px;
+
+}
+
+}
+
+@media(min-width:500px)and (max-width:768px){
+
+.google{
+        display:flex;
+        flex-direction:column;
+    
+    }
+    iframe{
+       width:800px;
+    }
+img{
+    width: 800px;
+    height: 391px;
+
+}
+
+
+}
+@media(min-width:770px){
+    .google{
+        display:flex;
+        flex-direction:row;
+    }
+ 
+    iframe{
+        width: 500px;
+       height: 391px;
+    }
+img{
+    width: 500px;
+    height: 391px;
+    padding-left: 2px;
+
+}
+}
+@media(min-width:1020px)
+{
+
+.google{
+        display:flex;
+        flex-direction:row;
+    }
+ 
+    iframe{
+        width: 714px;
+        height: 391px;
+    }
+img{
+    width: 507px;
+    height: 391px;
+    padding-left: 2px;
+}
+}
+@media(min-width:1050px)
+{
+    .google{
+        display:flex;
+        flex-direction:row;
+    }
+ 
+    iframe{
+        width: 714px;
+        height: 391px;
+    }
+img{
+    width: 707px;
+    height: 391px;
+    padding-left: 2px;
+}
+}
+    </style>
+<script>
+function playpause()
+    {
+ 
+ var vidplay = document.getElementById("vid").value;
+    if(vidplay.paused)
+        {
+            vidplay.play()
+            document.getElementById("control").innerHTML="pause";
+            return true; 
+        }
+    else
+        {  vidplay.pause();
+          document.getElementById("control").innerHTML="play" ;
+          return true;
+        }
+    }
+</script>
+</head>
+
+<body>
+
+<input type="checkbox" ><label> adarsh sharam </label>
+
+
+<!-- LOADER-->
+<h1>adarsh</h1>
+
+<!-- hover on only icon-->
+<div class="icons">
+     <i class="fa fa-facebook"></i>
+     <i class="fa fa-google"></i>
+     <i class="fa fa-twitter"></i>
+              </div>   
+   
+<!-- <div class="video-content">
+<embed src=" D:\videos\sanam\Jee-Le-Zaraa--Talaash---Sanam (FunzStar.Com).mp4" width="100%" height="100%" autoplay  id="vid"> 
+    <button onclick="playpause()" id="control">PAUSE</button>
+ </div>
+   <div class="googlemap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27925.57179292332!2d77.6938737!3d28.96672590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c645da0785f07%3A0x6f58c59af3ce3218!2sBrahmpuri%2C+Meerut%2C+Uttar+Pradesh+250002!5e0!3m2!1sen!2sin!4v1545905821277" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   </div>-->
+   <br><br> <br>
+   <div class="google">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27925.57179292332!2d77.6938737!3d28.96672590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c645da0785f07%3A0x6f58c59af3ce3218!2sBrahmpuri%2C+Meerut%2C+Uttar+Pradesh+250002!5e0!3m2!1sen!2sin!4v1545905821277" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   <img src="unsplash.jpg" alt="unplash"/>
+
+</div>
+<br> <br>
+</body>
+</html>
+
+
+
